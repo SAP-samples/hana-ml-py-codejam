@@ -50,7 +50,7 @@ Simply use this [Give Feedback](https://github.com/SAP-samples/hana-ml-py-codeja
 
 [Create an issue](https://github.com/SAP-samples/hana-ml-py-codejam/issues) in this repository if you find a bug or have questions about the content.
 
-For additional support, [ask a question in SAP Community](https://answers.sap.com/questions/ask.html).
+For additional support, [ask a question in SAP Community using `SAP HANA` tag](https://answers.sap.com/questions/ask.html?primaryTagId=73554900100700000996).
 
 ## Further connections and information
 
