@@ -89,3 +89,8 @@ python -m pip install --require-virtualenv --no-cache-dir nbconvert
 
 ## Execute "Check Setup" notebook
 
+In your BAS close the terminal, and in the Explorer open a `exercises/0x10-setup-check/0x10-check_setup.ipynb` notebook. 
+
+It should open in the Jupyter extension.
+
+Next select a kernel `env` (the virtual environment you setup earlier) from 
