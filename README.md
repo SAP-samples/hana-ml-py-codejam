@@ -8,7 +8,7 @@ In this CodeJam you will learn how to start with Python Client for SAP HANA Mach
 
 ## Overview
 
-* [Build your Machine Learning Scenario for your SAP HANA Cloud application from Python - Devtoberfest'22](https://www.youtube.com/live/CX38-95uBtc)
+* [Build your Machine Learning Scenario for your SAP HANA Cloud application from Python - Devtoberfest'22](https://groups.community.sap.com/t5/devtoberfest/build-your-machine-learning-scenario-for-your-sap-hana-cloud/ev-p/9071)
 
 ## Requirements
 
@@ -30,10 +30,11 @@ Here's an overview of the exercises in this CodeJam.
 
 > Make certain that you have successfully completed all the [prerequisites](prerequisites.md)
 
-* Exercise 0x00: Check your setup
-* Exercise 0x10: Basics of HANA DataFrame
-* Exercise 0x20: Exploratory Data Analysis, or EDA
-* Exercise 0x30: Building a ML model using Classification
+* Exercise 0x10: Setup SAP Business Application Studio and a dev space
+* Exercise 0x10: Check your setup
+* Exercise 0x20: Basics of HANA DataFrame
+* Exercise 0x30: Exploratory Data Analysis, or EDA
+* Exercise 0x40: Building a ML model using Classification
 * Exercise 0x50: AutoML
 
 ## Known Issues
