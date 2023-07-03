@@ -6,10 +6,11 @@ This repository contains the material for the CodeJam on Getting Started with Ma
 
 In this CodeJam you will learn how to start with Python Client for SAP HANA Machine Learning.
 
-## Overview
+## Overview sessions
 
 * [Build your Machine Learning Scenario for your SAP HANA Cloud application from Python - Devtoberfest'22](https://groups.community.sap.com/t5/devtoberfest/build-your-machine-learning-scenario-for-your-sap-hana-cloud/ev-p/9071)
-
+* [Accelerate your Machine Learning efforts - benefit from SAP HANA Cloud AutoML - SAP Community Call](https://groups.community.sap.com/t5/sap-community-calls/accelerate-your-machine-learning-efforts-benefit-from-sap-hana/ec-p/124250#M84)
+ 
 ## Requirements
 
 The requirements to follow the exercises in this repository, including hardware and software, are detailed in the [prerequisites](prerequisites.md) file.
