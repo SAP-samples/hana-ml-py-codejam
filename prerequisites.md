@@ -16,7 +16,7 @@ However, if you are an experienced developer, you can also execute them locally 
 
 ## Services
 
-You should have your own access to your subscription of SAP Business Application Studio (BAS). If you do not have access to BAS in your organization's account, then you can use one in SAP BTP free trial or free tier.
+You should have your own access to your subscription of SAP Business Application Studio (BAS). If you do not have access to BAS in your organization's account (eg. of your employer or your university), then you can use one in SAP BTP free trial or free tier.
 
 * Get a free SAP Business Technology Platform trial account, if you don't already have one:
   * [Tutorial: Get a Free Account on SAP BTP Trial](https://developers.sap.com/tutorials/hcp-create-trial-account.html)

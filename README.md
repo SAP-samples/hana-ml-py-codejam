@@ -1,3 +1,5 @@
+[![REUSE status](https://api.reuse.software/badge/github.com/SAP-samples/hana-ml-py-codejam)](https://api.reuse.software/info/github.com/SAP-samples/hana-ml-py-codejam)
+
 # CodeJam - Getting Started with Machine Learning using SAP HANA and Python
 
 ## Description
