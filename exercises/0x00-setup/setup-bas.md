@@ -87,10 +87,18 @@ Install Jupyter's `nbconvert` to be able to clean the output of notebooks, eg. b
 python -m pip install --require-virtualenv --no-cache-dir nbconvert
 ```
 
-## Execute "Check Setup" notebook
+## Open "Check Setup" notebook
 
 In your BAS close the terminal, and in the Explorer open a `exercises/0x10-setup-check/0x10-check_setup.ipynb` notebook. 
 
 It should open in the Jupyter extension.
 
-Next select a kernel `env` (the virtual environment you setup earlier) from 
+Next select a kernel `env` (the virtual environment you setup earlier) from "Python Environments".
+
+![Select the kernel](img/setup0110.png)
+
+The kernel should be set in a few second you should get messages about Jupyter server processes started in the background ready to execute code from your notebook.
+
+![Ready to go!](img/setup0120.png)
+
+## 🤓 Now you are ready to go through exercises! Engage, learn and enjoy!
