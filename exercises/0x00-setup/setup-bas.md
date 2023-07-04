@@ -1,6 +1,6 @@
 # Setup SAP Business Application Studio and a dev space
 
-## Use SAP Bisness Technology Platform
+## Use SAP Business Technology Platform
 It is assumed that you have access to SAP Business Technology Platform - either via your organization or via a free trial.
 
 ## Set up SAP Business Application Studio
