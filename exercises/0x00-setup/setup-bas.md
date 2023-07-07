@@ -12,9 +12,11 @@ For SAP CodeJam exercises create a new Dev Space called `CodeJamHANAML` of a kin
 
 ![Create a Dev Space](img/setup0020.png)
 
+Wait for the dev space to get into the **running** state and then open that dev space.
+
 ## Clone the exercises from Git repository
 
-Use one of the available options to clone a Git repository with exercises `https://github.com/SAP-samples/hana-ml-py-codejam.git` into your project's directory in BAS Dev Space.
+Once your dev space is open in BAS, use one of the available options to clone a Git repository with exercises `https://github.com/SAP-samples/hana-ml-py-codejam.git` into your project's directory in BAS Dev Space.
 
 ![Clone the repo](img/setup0030.png)
 
