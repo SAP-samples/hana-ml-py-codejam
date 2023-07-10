@@ -24,7 +24,7 @@ Click **Open** to open a project in the Explorer view.
 
 ![Open a project](img/setup0040.png)
 
-## Install VS Code extensions from VSX Open Registry
+## Install required extensions from VSX Open Registry
 
 > SAP provides you with a mechanism to access third party sites to view and download open-source, 3rd party or its own tools, libraries, or software components ("Extensions") to dev spaces in SAP Business Application Studio. Using this mechanism, you can view and install VS Code Extensions from the [VSX Open Registry](https://open-vsx.org/) at your own risk.
 

@@ -1,8 +1,10 @@
 # Prerequisites
 
-There are hardware, software and service prerequisites for participating in this SAP CodeJam. The general approach assumed for the participants is that exercises will be executed using [SAP Business Application Studio](https://community.sap.com/topics/business-application-studio) as the development tool. 
+There are hardware, software and service prerequisites for participating in this SAP CodeJam. 
 
-However, if you are an experienced developer, you can also execute them locally on your own computer using JupyterLab or Microsoft VSCode. 
+The approach assumed for the participants is that exercises will be executed using [SAP Business Application Studio](https://community.sap.com/topics/business-application-studio) as the development tool. 
+
+If you are experienced using JupyterLab or Microsoft VSCode, then you could execute exercises locally on your own computer, but the setup for this is going outside of the scope of this material.
 
 # SAP Business Application Studio
 

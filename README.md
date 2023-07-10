@@ -10,8 +10,10 @@ In this CodeJam you will learn how to start with Python Client for SAP HANA Mach
 
 ## Overview sessions
 
-* [Build your Machine Learning Scenario for your SAP HANA Cloud application from Python - Devtoberfest'22](https://groups.community.sap.com/t5/devtoberfest/build-your-machine-learning-scenario-for-your-sap-hana-cloud/ev-p/9071)
-* [Accelerate your Machine Learning efforts - benefit from SAP HANA Cloud AutoML - SAP Community Call](https://groups.community.sap.com/t5/sap-community-calls/accelerate-your-machine-learning-efforts-benefit-from-sap-hana/ec-p/124250#M84)
+These recorded sessions are optional, but are available should you be interested to get an overview ahead of the event, or after the event to recap.
+
+1. [Build your Machine Learning Scenario for your SAP HANA Cloud application from Python - Devtoberfest'22](https://groups.community.sap.com/t5/devtoberfest/build-your-machine-learning-scenario-for-your-sap-hana-cloud/ev-p/9071)
+1. [Accelerate your Machine Learning efforts - benefit from SAP HANA Cloud AutoML - SAP Community Call](https://groups.community.sap.com/t5/sap-community-calls/accelerate-your-machine-learning-efforts-benefit-from-sap-hana/ec-p/124250#M84)
  
 ## Requirements
 
@@ -59,6 +61,8 @@ For additional support, [ask a question in SAP Community using `SAP HANA` tag](h
 ## Further connections and information
 
 Here are a few pointers to resources for further connections and information:
+- Join the [Application Development group at SAP Community](https://groups.community.sap.com/t5/application-development/gh-p/application-development)
+- Watch the [Building Intelligent Data Application demo](https://youtu.be/yzA3IOIG5IQ) from SAP TechEd'22
 
 ## Contributing
 
