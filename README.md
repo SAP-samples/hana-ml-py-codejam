@@ -42,6 +42,8 @@ Here's an overview of the exercises in this CodeJam.
 * Exercise 0x20: [Basics of HANA DataFrames](exercises/0x20-dataframes/)
 * Exercise 0x30: [Exploratory Data Analysis, or EDA](exercises/0x30-eda/)
 * Exercise 0x40: [Training a ML model using Classification](exercises/0x40-titanic-classification/)
+* Exercise 0x42: [Preprocessing](exercises/0x42-preprocessing/)
+* Exercise 0x44: [Model tuning](exercises/0x44-tuning/)
 * Exercise 0x50: [AutoML](exercises/0x50-auto-ml/0x010-auto_ml.ipynb)
 
 ## Known Issues
