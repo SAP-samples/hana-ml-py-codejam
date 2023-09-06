@@ -37,14 +37,17 @@ Here's an overview of the exercises in this CodeJam.
 
 > Make certain that you have successfully completed all the [prerequisites](prerequisites.md)
 
-* Exercise 0x00: [Setup SAP Business Application Studio and a dev space](exercises/0x00-setup/setup-bas.md)
-* Exercise 0x10: [Check your setup](exercises/0x10-setup-check/0x10-check_setup.ipynb)
-* Exercise 0x20: [Basics of HANA DataFrames](exercises/0x20-dataframes/)
-* Exercise 0x30: [Exploratory Data Analysis, or EDA](exercises/0x30-eda/)
-* Exercise 0x40: [Training a ML model using Classification](exercises/0x40-titanic-classification/)
-* Exercise 0x42: [Preprocessing](exercises/0x42-preprocessing/)
-* Exercise 0x44: [Model tuning](exercises/0x44-tuning/)
-* Exercise 0x50: [AutoML](exercises/0x50-auto-ml/0x010-auto_ml.ipynb)
+* [Setup SAP Business Application Studio and a dev space](exercises/00-setup/setup-bas.md)
+* [Check your setup](exercises/010-check_setup.ipynb)
+* [Basics of HANA DataFrames](exercises/020-dataframes.ipynb)
+* [Exploratory Data Analysis, or EDA](exercises/030-UnifiedReportDF-EDA.ipynb)
+* [Training a ML model using Classification](exercises/040-Classification-RDT-FirstFit.ipynb)
+* [Training a ML model using Train/Test split](exercises/041-Classification-RDT-TrainTestSplit-Implicit.ipynb)
+* [Preprocessing - Exclude High Cardinality](exercises/050-RDT-Preprocessing-ExcludeHighCardinality.ipynb)
+* [Preprocessing - Missing Values](exercises/051-RDT-Preprocessing-MissingValues.ipynb)
+* [Preprocessing - Feature Engineering](exercises/052-RDT-Preprocessing-FE.ipynb)
+* [Model tuning](exercises/060-RDT-Tuning-Hyperparameters.ipynb)
+* [Auto ML](exercises/070-RDT-AutoML.ipynb)
 
 ## Known Issues
 
