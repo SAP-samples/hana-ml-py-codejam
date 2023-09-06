@@ -8,7 +8,7 @@ This repository contains the material for the CodeJam on Getting Started with Ma
 
 In this CodeJam you will learn how the Machine Learning process develops using a Python Client for SAP HANA.
 
-![Overview](exercises/0x00-setup/img/overview.png)
+![Overview](exercises/00-setup/img/overview.png)
 
 ## Overview sessions
 
