@@ -37,17 +37,23 @@ Here's an overview of the exercises in this CodeJam.
 
 > Make certain that you have successfully completed all the [prerequisites](prerequisites.md)
 
-* [Setup SAP Business Application Studio and a dev space](exercises/00-setup/setup-bas.md)
-* [Check your setup](exercises/010-check_setup.ipynb)
-* [Basics of HANA DataFrames](exercises/020-dataframes.ipynb)
-* [Exploratory Data Analysis, or EDA](exercises/030-UnifiedReportDF-EDA.ipynb)
-* [Training a ML model using Classification](exercises/040-Classification-RDT-FirstFit.ipynb)
-* [Training a ML model using Train/Test split](exercises/041-Classification-RDT-TrainTestSplit-Implicit.ipynb)
-* [Preprocessing - Exclude High Cardinality](exercises/050-RDT-Preprocessing-ExcludeHighCardinality.ipynb)
-* [Preprocessing - Missing Values](exercises/051-RDT-Preprocessing-MissingValues.ipynb)
-* [Preprocessing - Feature Engineering](exercises/052-RDT-Preprocessing-FE.ipynb)
-* [Model tuning](exercises/060-RDT-Tuning-Hyperparameters.ipynb)
-* [Auto ML](exercises/070-RDT-AutoML.ipynb)
+Setup:
+
+1. [Setup SAP Business Application Studio and a dev space](exercises/00-setup/setup-bas.md), or
+1. [Setup GitHub and a codespace](exercises/00-setup/setup-gh-codespace.md)
+
+Machine Learning:
+
+1. [Check your setup](exercises/010-check_setup.ipynb)
+1. [Basics of HANA DataFrames](exercises/020-dataframes.ipynb)
+1. [Exploratory Data Analysis, or EDA](exercises/030-UnifiedReportDF-EDA.ipynb)
+1. [Training a ML model using Classification](exercises/040-Classification-RDT-FirstFit.ipynb)
+1. [Training a ML model using Train/Test split](exercises/041-Classification-RDT-TrainTestSplit-Implicit.ipynb)
+1. [Preprocessing - Exclude High Cardinality](exercises/050-RDT-Preprocessing-ExcludeHighCardinality.ipynb)
+1. [Preprocessing - Missing Values](exercises/051-RDT-Preprocessing-MissingValues.ipynb)
+1. [Preprocessing - Feature Engineering](exercises/052-RDT-Preprocessing-FE.ipynb)
+1. [Model tuning](exercises/060-RDT-Tuning-Hyperparameters.ipynb)
+1. [Auto ML](exercises/070-RDT-AutoML.ipynb)
 
 ## Known Issues
 

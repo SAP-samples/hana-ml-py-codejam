@@ -57,6 +57,6 @@ The (5) kernel should be set automatically to something like `~/.python/current/
 
 ![Ready to go!](img/ghsetup0090.png)
 
-## 🤓 Now you are ready to use SAP Business Application Studio to go one-by-one through exercises! 
+## 🤓 Now you are ready to use GitHub codespace to go one-by-one through exercises! 
 
 ### Engage, learn and enjoy!
