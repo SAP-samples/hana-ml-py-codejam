@@ -18,9 +18,9 @@ If you are experienced in using Jupyter or Microsoft VSCode, then you could exec
 
 ## Services
 
-You should have your own access to your subscription to SAP Business Application Studio (BAS). 
+You should have your own access to a subscription to the SAP Business Application Studio (BAS). 
 
-If you do not have access to BAS in your organization's account (eg. of your employer or your university), then you can use one in either SAP BTP free trial or free tier:
+If you do not have access to BAS in your organization's account (eg. of your employer or your university), then you can use one in either SAP BTP free trial (for individuals) or free tier (for organizations):
 
 * Get a free SAP Business Technology Platform trial account, if you don't already have one:
   * [Tutorial: Get a Free Account on SAP BTP Trial](https://developers.sap.com/tutorials/hcp-create-trial-account.html)
