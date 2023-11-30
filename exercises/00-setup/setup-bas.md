@@ -92,8 +92,9 @@ python -m pip install hana-ml ipywidgets 'jinja2>=3.0.0' pydotplus graphviz 'sha
 
 ![Install hana-ml and dependencies](img/setup0100.png)
 
-3. Install Jupyter's own `nbformat` to be able to run one notebook from another and `nbconvert` to be able to clean the output of notebooks, eg. before pushing to the Git repository, using the following command:
-```sh
+3. Install Jupyter's own [utilities for programatic work with notebook documents](https://docs.jupyter.org/en/latest/projects/conversion.html): `nbformat` to be able to run one notebook from another, and `nbconvert` to be able to clean the output of notebooks, eg. before pushing to the Git repository, using the following command:
+
+```shell
 python -m pip install --require-virtualenv --no-cache-dir nbformat nbconvert
 ```
 
