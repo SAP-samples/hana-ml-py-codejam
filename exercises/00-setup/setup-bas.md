@@ -102,7 +102,7 @@ python -m pip install --require-virtualenv --no-cache-dir nbformat nbconvert
 
 In your BAS close the terminal. 
 
-Go to Explorer and open a `exercises/0x10-setup-check/0x10-check_setup.ipynb` notebook. 
+Go to Explorer and open a [exercises/010-check_setup.ipynb](../010-check_setup.ipynb) notebook. 
 
 The notebook should open in a Jupyter extension.
 
