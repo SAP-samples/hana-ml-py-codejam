@@ -108,7 +108,7 @@ The notebook should open in a Jupyter extension.
 
 Next, select a kernel `env` (the virtual environment you set up earlier) from **Python Environments**.
 
-![Select the kernel](img/setup0110.png)
+![Select the kernel](img/setup0111.png)
 
 The kernel should be set in a few seconds you should get messages about Jupyter server processes started in the background ready to execute code from your notebook.
 
