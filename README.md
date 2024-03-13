@@ -9,13 +9,6 @@ This repository contains the material for the CodeJam on Getting Started with Ma
 In this CodeJam you will learn how the Machine Learning process develops using a Python Client for SAP HANA.
 
 ![Overview](exercises/00-setup/img/overview.png)
-
-## Overview sessions
-
-These recorded sessions are optional, but are available should you be interested to get an overview ahead of the event, or after the event to recap.
-
-1. [Build your Machine Learning Scenario for your SAP HANA Cloud application from Python - Devtoberfest'22](https://groups.community.sap.com/t5/devtoberfest/build-your-machine-learning-scenario-for-your-sap-hana-cloud/ev-p/9071)
-1. [Accelerate your Machine Learning efforts - benefit from SAP HANA Cloud AutoML - SAP Community Call](https://groups.community.sap.com/t5/sap-community-calls/accelerate-your-machine-learning-efforts-benefit-from-sap-hana/ec-p/124250#M84)
  
 ## Requirements
 
@@ -54,6 +47,14 @@ Machine Learning:
 1. [Preprocessing - Feature Engineering](exercises/052-RDT-Preprocessing-FE.ipynb)
 1. [Model tuning](exercises/060-RDT-Tuning-Hyperparameters.ipynb)
 1. [Auto ML](exercises/070-RDT-AutoML.ipynb)
+
+## Overview sessions
+
+These recorded sessions are optional, but are available should you be interested to get an overview ahead of the event, or after the event to recap.
+
+1. 📺 [Build your Machine Learning Scenario for your SAP HANA Cloud application from Python - Devtoberfest'22](https://groups.community.sap.com/t5/devtoberfest/build-your-machine-learning-scenario-for-your-sap-hana-cloud/ev-p/9071)
+1. 📺 [Accelerate your Machine Learning efforts - benefit from SAP HANA Cloud AutoML - SAP Community Call](https://groups.community.sap.com/t5/sap-community-calls/accelerate-your-machine-learning-efforts-benefit-from-sap-hana/ec-p/124250#M84)
+1. [Fairness in Machine Learning:A New Feature in SAP HANA Cloud PAL 2023/Q4](https://community.sap.com/t5/technology-blogs-by-sap/fairness-in-machine-learning-a-new-feature-in-sap-hana-cloud-pal/ba-p/13580185)
 
 ## Known Issues
 
