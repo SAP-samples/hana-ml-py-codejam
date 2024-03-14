@@ -3,8 +3,14 @@
 ## [1/8] Use SAP Business Technology Platform
 It is assumed that you have access to SAP Business Technology Platform - either via your organization or via a free trial, as described in [prerequisites](../../prerequisites.md).
 
-## [2/8] Set up SAP Business Application Studio
-If you are using the [SAP BTP free trial](https://developers.sap.com/tutorials/hcp-create-trial-account.html), then perform all the steps in [this tutorial - Set Up SAP Business Application Studio for Development](https://developers.sap.com/tutorials/appstudio-onboarding.html)
+If you are using SAP BTP Trial, then open it: https://hanatrial.ondemand.com/
+
+## [2/8] Open SAP Business Application Studio
+If you are using the [SAP BTP free trial](https://account.hanatrial.ondemand.com/trial/#/home/trial), then open [SAP Business Application Studio trial](https://triallink.us10.trial.applicationstudio.cloud.sap/) from the "Quick Tool Access" section.
+
+![Open BAS Trial](img/setup0010.png)
+
+Should you have issues opening SAP Business Application Studio (for example when you have had the account for a long time), then check the steps in [this tutorial - Set Up SAP Business Application Studio for Development](https://developers.sap.com/tutorials/appstudio-onboarding.html)
 
 ## [3/8] Create a new Dev Space for CodeJam exercises
 
@@ -19,6 +25,8 @@ You should see the dev space **STARTING**.
 ![Dev Space is Starting](img/setup0023.png)
 
 Wait for the dev space to get into the **RUNNING** state and then open that dev space.
+
+![Dev Space is Running](img/setup0025.png)
 
 ## [4/8] Clone the exercises from Git repository
 
@@ -60,7 +68,13 @@ Use `venv` to create a virtual environment for your project in the new directory
 python3 -m venv ~/projects/hana-ml-py-codejam/env --upgrade-deps
 ```
 
-![Create an venv](img/setup0070.png)
+Check that the virtual environment was successfully created:
+
+```shell
+ls -l ~/projects/hana-ml-py-codejam/env
+```
+
+![Create an venv](img/setup0071.png)
 
 ## [7/8] Install required Python packages in the virtual environment
 
@@ -102,7 +116,7 @@ python -m pip install --require-virtualenv --no-cache-dir nbformat nbconvert
 
 In your BAS close the terminal. 
 
-Go to Explorer and open a [exercises/010-check_setup.ipynb](../010-check_setup.ipynb) notebook. 
+Go to Explorer and open a `exercises/010-check_setup.ipynb` notebook. 
 
 The notebook should open in a Jupyter extension.
 
