@@ -38,7 +38,7 @@ Setup:
 Machine Learning:
 
 1. [Check your setup](exercises/010-check_setup.ipynb)
-1. [Basics of HANA DataFrames](exercises/020-dataframes.ipynb)
+1. [(Optional) Basics of HANA DataFrames](exercises/020-dataframes.ipynb)
 1. [Exploratory Data Analysis, or EDA](exercises/030-UnifiedReportDF-EDA.ipynb)
 1. [Training a ML model using Classification](exercises/040-Classification-RDT-FirstFit.ipynb)
 1. [Training a ML model using Train/Test split](exercises/041-Classification-RDT-TrainTestSplit-Implicit.ipynb)
