@@ -104,7 +104,7 @@ python -m pip install --require-virtualenv --no-cache-dir ipykernel
 
 ![Install ipykernel](img/setup0090.png)
 
-2. the [Python machine learning client for SAP HANA](https://pypi.org/project/hana-ml/) (`hana-ml`) and other required dependencies listed in https://help.sap.com/doc/cd94b08fe2e041c2ba778374572ddba9/2023_3_QRC/en-US/Installation.html#installation-guide using the following command:
+2. the [Python machine learning client for SAP HANA](https://pypi.org/project/hana-ml/) (`hana-ml`) and other required dependencies listed in https://help.sap.com/doc/cd94b08fe2e041c2ba778374572ddba9/2024_1_QRC/en-US/Installation.html#installation-guide using the following command:
 
 ```shell
 python -m pip install 'hana_ml==2.20.24031902' ipywidgets 'jinja2>=3.0.0' pydotplus graphviz 'shapely>=1.7.1' matplotlib  --require-virtualenv --no-cache-dir
@@ -120,7 +120,9 @@ python -m pip install --require-virtualenv --no-cache-dir nbformat nbconvert
 
 ## [8/8] Open the "Check Setup" notebook from the exercises
 
-In your BAS close the terminal. 
+In your BAS close the terminal.
+
+![Close the terminal](img/setup0108.png)
 
 Go to Explorer and open a `exercises/010-check_setup.ipynb` notebook. 
 
