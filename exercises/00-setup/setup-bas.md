@@ -1,7 +1,7 @@
 # Setup SAP Business Application Studio and a dev space
 
 ## [1/8] Use SAP Business Technology Platform
-It is assumed that you have access to SAP Business Technology Platform - either via your organization or via a free trial, as described in [prerequisites](../../prerequisites.md).
+It is assumed that you have access to the SAP Business Technology Platform - either via your organization or via a free trial, as described in [prerequisites](../../prerequisites.md).
 
 If you are using SAP BTP Trial, then open it: https://hanatrial.ondemand.com/
 
@@ -14,9 +14,15 @@ Should you have issues opening SAP Business Application Studio (for example when
 
 ## [3/8] Create a new Dev Space for CodeJam exercises
 
-Go to your instance of SAP Business Application Studio (further refered to as "BAS").
+Go to your instance of SAP Business Application Studio (further referred to as "BAS").
 
-For this SAP CodeJam exercise create a new Dev Space called `CodeJamHANAML` of a kind **Basic** with an additional extension **Python Tools** in BAS.
+For this SAP CodeJam exercise create a new Dev Space called `CodeJamHANAML` of a kind **Basic** with an additional extension **Python Tools** in BAS:
+
+|Screen element|Value|
+|-|-|
+|Dev Space name|`CodeJamHANAML`|
+|Kind|**Basic**|
+|Additional extension|**Python Tools**|
 
 ![Create a Dev Space](img/setup0021.png)
 
@@ -28,7 +34,7 @@ Wait for the dev space to get into the **RUNNING** state and then open that dev 
 
 ![Dev Space is Running](img/setup0025.png)
 
-## [4/8] Clone the exercises from Git repository
+## [4/8] Clone the exercises from the Git repository
 
 Once your dev space is open in BAS, use one of the available options to clone a Git repository with exercises from URL 👇🏼 
 ```sh
@@ -42,7 +48,7 @@ Click **Open** to open a project in the Explorer view.
 
 ![Open a project](img/setup0040.png)
 
-## [5/8] Check that required extensions are installed
+## [5/8] Check that the required extensions are installed
 
 > SAP provides you with a mechanism to access third-party sites to view and download open-source, 3rd party or its own tools, libraries, or software components ("Extensions") to dev spaces in SAP Business Application Studio. Using this mechanism, you can view and install VS Code Extensions from the [VSX Open Registry](https://open-vsx.org/) at your own risk.
 
@@ -60,7 +66,7 @@ Open a built-in terminal in BAS, eg. using the menu option.
 
 ![Open a terminal](img/setup0060.png)
 
-Make sure you are in `/home/user/projects/hana-ml-py-codejam` directory, eg. using `pwd` command.
+Make sure you are in the `/home/user/projects/hana-ml-py-codejam` directory, e.g., using the `pwd` command.
 
 Use `venv` to create a virtual environment for your project in the new directory `~/projects/hana-ml-py-codejam/env` by using the following command:
 
@@ -84,7 +90,7 @@ Activate the virtual environment using the following command:
 source ~/projects/hana-ml-py-codejam/env/bin/activate
 ```
 
-You should see you are in a virtual environment as indicated by `(env)` prefix in shell's prompt.
+You should see you are in a virtual environment as indicated by the `(env)` prefix in a shell's prompt.
 
 ![Activate the venv](img/setup0080.png)
 
@@ -101,18 +107,18 @@ python -m pip install --require-virtualenv --no-cache-dir ipykernel
 2. the [Python machine learning client for SAP HANA](https://pypi.org/project/hana-ml/) (`hana-ml`) and other required dependencies listed in https://help.sap.com/doc/cd94b08fe2e041c2ba778374572ddba9/2023_3_QRC/en-US/Installation.html#installation-guide using the following command:
 
 ```shell
-python -m pip install 'hana_ml==2.18.*' ipywidgets 'jinja2>=3.0.0' pydotplus graphviz 'shapely>=1.7.1' matplotlib  --require-virtualenv --no-cache-dir
+python -m pip install 'hana_ml==2.20.24031902' ipywidgets 'jinja2>=3.0.0' pydotplus graphviz 'shapely>=1.7.1' matplotlib  --require-virtualenv --no-cache-dir
 ```
 
 ![Install hana-ml and dependencies](img/setup0100.png)
 
-3. Install Jupyter's own [utilities for programatic work with notebook documents](https://docs.jupyter.org/en/latest/projects/conversion.html): `nbformat` to be able to run one notebook from another, and `nbconvert` to be able to clean the output of notebooks, eg. before pushing to the Git repository, using the following command:
+3. Install Jupyter's own [utilities for programmatic work with notebook documents](https://docs.jupyter.org/en/latest/projects/conversion.html): `nbformat` to be able to run one notebook from another, and `nbconvert` to be able to clean the output of notebooks, eg. before pushing to the Git repository, using the following command:
 
 ```shell
 python -m pip install --require-virtualenv --no-cache-dir nbformat nbconvert
 ```
 
-## [8/8] Open the "Check Setup" notebook from exercises
+## [8/8] Open the "Check Setup" notebook from the exercises
 
 In your BAS close the terminal. 
 
@@ -124,7 +130,7 @@ Next, select a kernel `env` (the virtual environment you set up earlier) from **
 
 ![Select the kernel](img/setup0111.png)
 
-The kernel should be set in a few seconds you should get messages about Jupyter server processes started in the background ready to execute code from your notebook.
+The kernel should be set in a few seconds. You should get messages about Jupyter server processes started in the background ready to execute code from your notebook.
 
 ![Ready to go!](img/setup0120.png)
 
