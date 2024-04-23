@@ -32,7 +32,7 @@ You should see the dev space **STARTING**.
 
 Wait for the dev space to get into the **RUNNING** state and then open that dev space.
 
-![Dev Space is Running](img/setup0025.png)
+![Dev Space is Running](img/setup0026.png)
 
 ## [4/8] Clone the exercises from the Git repository
 
