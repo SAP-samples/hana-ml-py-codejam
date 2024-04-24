@@ -2,6 +2,11 @@
 user*.ini
 .vscode/settings.json
 .DS_Store
+
+exercises/0xhh-helpers/*
+exercises-selfstudy/*
+exercises/0xh0-misc/*
+
 # Byte-compiled / optimized / DLL files
 
 __pycache__/
