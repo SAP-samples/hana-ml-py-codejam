@@ -1,18 +1,18 @@
 # Setup SAP Business Application Studio and a dev space
 
-## [1/8] Use SAP Business Technology Platform
+## [1/9] Use SAP Business Technology Platform
 It is assumed that you have access to the SAP Business Technology Platform - either via your organization or via a free trial, as described in [prerequisites](../../prerequisites.md).
 
 If you are using SAP BTP Trial, then open it: https://hanatrial.ondemand.com/
 
-## [2/8] Open SAP Business Application Studio
+## [2/9] Open SAP Business Application Studio
 If you are using the [SAP BTP free trial](https://account.hanatrial.ondemand.com/trial/#/home/trial), then open [SAP Business Application Studio trial](https://triallink.us10.trial.applicationstudio.cloud.sap/) from the "Quick Tool Access" section.
 
 ![Open BAS Trial](img/setup0010.png)
 
 Should you have issues opening SAP Business Application Studio (for example when you have had the account for a long time), then check the steps in [this tutorial - Set Up SAP Business Application Studio for Development](https://developers.sap.com/tutorials/appstudio-onboarding.html)
 
-## [3/8] Create a new Dev Space for CodeJam exercises
+## [3/9] Create a new Dev Space for CodeJam exercises
 
 Go to your instance of SAP Business Application Studio (further referred to as "BAS").
 
@@ -34,7 +34,7 @@ Wait for the dev space to get into the **RUNNING** state and then open that dev 
 
 ![Dev Space is Running](img/setup0026.png)
 
-## [4/8] Clone the exercises from the Git repository
+## [4/9] Clone the exercises from the Git repository
 
 Once your dev space is open in BAS, use one of the available options to clone a Git repository with exercises from URL 👇🏼 
 ```sh
@@ -48,7 +48,7 @@ Click **Open** to open a project in the Explorer view.
 
 ![Open a project](img/setup0040.png)
 
-## [5/8] Check that the required extensions are installed
+## [5/9] Check that the required extensions are installed
 
 > SAP provides you with a mechanism to access third-party sites to view and download open-source, 3rd party or its own tools, libraries, or software components ("Extensions") to dev spaces in SAP Business Application Studio. Using this mechanism, you can view and install VS Code Extensions from the [VSX Open Registry](https://open-vsx.org/) at your own risk.
 
@@ -58,7 +58,7 @@ You should see **Python** and **Jupyter** extensions installed already.
 
 ![Extensions to install](img/setup0051.png)
 
-## [6/8] Create a virtual environment with `venv` from a command line
+## [6/9] Create a virtual environment with `venv` from a command line
 
 The built-in [venv module](https://docs.python.org/3.9/library/venv.html#module-venv) in Python provides support for creating lightweight “virtual environments” with their own site directories, optionally isolated from system site directories.
 
@@ -82,7 +82,7 @@ ls -l ~/projects/hana-ml-py-codejam/env
 
 ![Create an venv](img/setup0071.png)
 
-## [7/8] Install required Python packages in the virtual environment
+## [7/9] Activate the virtual environment `env` from a command line
 
 Activate the virtual environment using the following command:
 
@@ -93,6 +93,8 @@ source ~/projects/hana-ml-py-codejam/env/bin/activate
 You should see you are in a virtual environment as indicated by the `(env)` prefix in a shell's prompt.
 
 ![Activate the venv](img/setup0080.png)
+
+## [8/9] Install required Python packages in the virtual environment
 
 Install:
 
@@ -118,7 +120,7 @@ python -m pip install 'hana_ml==2.20.24031902' ipywidgets 'jinja2>=3.0.0' pydotp
 python -m pip install --require-virtualenv --no-cache-dir nbformat nbconvert
 ```
 
-## [8/8] Open the "Check Setup" notebook from the exercises
+## [9/9] Open the "Check Setup" notebook from the exercises
 
 In your BAS close the terminal.
 
