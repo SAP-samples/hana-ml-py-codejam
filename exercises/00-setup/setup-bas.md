@@ -60,7 +60,7 @@ You should see **Python** and **Jupyter** extensions installed already.
 
 ## [6/9] Create a virtual environment with `venv` from a command line
 
-The built-in [venv module](https://docs.python.org/3.9/library/venv.html#module-venv) in Python provides support for creating lightweight “virtual environments” with their own site directories, optionally isolated from system site directories.
+The built-in [venv module](https://docs.python.org/3.9/library/venv.html#module-venv) in Python provides support for creating lightweight “virtual environments”. Each virtual environment has its own Python binary (which matches the version of the binary that was used to create this environment) and can have its own independent set of installed Python packages in its site directories.
 
 Open a built-in terminal in BAS, eg. using the menu option.
 
@@ -122,9 +122,9 @@ python -m pip install --require-virtualenv --no-cache-dir nbformat nbconvert
 
 ## [9/9] Open the "Check Setup" notebook from the exercises
 
-In your BAS close the terminal.
+In your BAS hide the terminal.
 
-![Close the terminal](img/setup0108.png)
+![Hide the terminal](img/setup0108.png)
 
 Go to Explorer and open a `exercises/010-check_setup.ipynb` notebook. 
 
