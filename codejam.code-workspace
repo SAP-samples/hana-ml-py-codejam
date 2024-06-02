@@ -5,7 +5,6 @@
 		}
 	],
 	"settings": {
-		"python.defaultInterpreterPath": "~/projects/hana-ml-py-codejam/env/bin/python",
 		"jupyter.kernels.excludePythonEnvironments": [
 			"/bin/python3",
 			"/usr/bin/python3",
