@@ -32,8 +32,7 @@ Here's an overview of the exercises in this CodeJam.
 
 Setup:
 
-1. [Setup SAP Business Application Studio and a dev space](exercises/00-setup/setup-bas.md), **or**
-1. [Setup GitHub and a codespace](exercises/00-setup/setup-gh-codespace.md)
+* [Setup SAP Business Application Studio and a dev space](exercises/00-setup/setup-bas.md)
 
 Machine Learning:
 
