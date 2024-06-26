@@ -14,7 +14,8 @@ If you are experienced in using Jupyter or Microsoft VSCode, then you could exec
 
 ## Software
 
-* [A web browser supported by the SAP Business Application Studio](https://help.sap.com/docs/SAP%20Business%20Application%20Studio/9d1db9835307451daa8c930fbd9ab264/8f46c6e6f86641cc900871c903761fd4.html#availability)
+* A Chromium-based web browser, like Google Chrome, MS Edge, Vivaldi, Brave etc.
+* Unfortunately there are some issues, when using a Firefox web browser.
 
 ## Services
 
