@@ -1,0 +1,13 @@
+column table "TITANIC_TEST"(
+  "PassengerId" integer PRIMARY KEY,
+  "PClass" integer,
+  "Name" nvarchar(200),
+  "Sex" nvarchar(1),
+  "Age" integer,
+  "SibSp" integer,
+  "ParCh" integer,
+  "Ticket" nvarchar(200),
+  "Fare" integer,
+  "Cabin" nvarchar(200),
+  "Embarked" nvarchar(1)
+)

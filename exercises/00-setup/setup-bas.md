@@ -38,7 +38,7 @@ Wait for the dev space to get into the **RUNNING** state and then open that dev 
 
 Once your dev space is open in the BAS, use one of the available options to clone this Git repository with exercises using the URL 👇🏼 
 ```sh
-https://github.com/SAP-samples/hana-ml-py-codejam.git
+https://github.com/INNOV8iON-NL/hana-ml-py-codejam.git
 ```
 ☝🏻 into your `project` directory in the BAS Dev Space.
 
