@@ -10,6 +10,40 @@ In this CodeJam you will learn how the Machine Learning process develops using a
 
 ![Overview](exercises/00-setup/img/overview.png)
 
+## To Do - INNOV8iON Day
+- Theorie
+    - [ ] PowerPoint presentatie maken
+- Demo
+    - [ ] Draaiboek uitwerken (wat willen we laten zien?)
+    - [ ] Voorbeeld model trainen met acceptabele nauwkeurigheid
+        - [ ] Model exporteren (design-time artefacts zijn gegenereerd)
+    - [ ] Demo CAP app opzetten
+        - [X] Uitzoeken hoe ML model gebruikt kan worden in een (Fiori) app
+        - [ ] Importeer en configureer ML model in de app
+        - [ ] Fiori view maken om het model aan te roepen
+- HANA Instance opzetten
+    - [X] Free Tier fixen
+    - [X] Instantie aanmaken en deployen
+    - [X] Tabellen definiëren
+    - [X] PAL aanzetten
+    - [ ] Users opzetten voor toegang
+     - [X] Uitzoeken rollen (access_role & AFL__SYS_AFL_AFLPAL_EXECUTE_WITH_GRANT_OPTION)
+     - [X] Testgebruikers (INNOV8ION_USER1, _USER2)
+     - [ ] Gebruikers voor alle deelnemers
+- Dataset voorbereiden
+    - Bron: https://www.kaggle.com/competitions/titanic/data
+    - [X] CSV bestanden omzetten naar SQL insert statements (ChatGPT)
+    - [X] Data inladen in HANA
+    - [ ] DATA_COMPLETE dataset (ground truth)
+    - [ ] Optioneel: Dataset opleuken met INNOV8iON gerelateerde data
+- Machine Learning GitHub Project
+    - [X] Initiële test: werkt het met onze HANA Instance?
+    - [ ] Aanpassen bestaande Jupyter Notebooks
+        - [ ] Vervangen oude informatie (URLs, verwijzingen naar data in HANA)
+        - [ ] Verwijderen irrelevante opgaven
+        - [ ] Optioneel: alles samenvoegen in één Jupyter Notebook?
+    - [X] Backup maken van database bestanden
+
 ## Requirements
 
 The requirements necessary to complete the exercises in this repository, including hardware and software specifications, are outlined in the [prerequisites](prerequisites.md) file.
