@@ -34,7 +34,7 @@ In this CodeJam you will learn how the Machine Learning process develops using a
     - Bron: https://www.kaggle.com/competitions/titanic/data
     - [X] CSV bestanden omzetten naar SQL insert statements (ChatGPT)
     - [X] Data inladen in HANA
-    - [ ] DATA_COMPLETE dataset (ground truth)
+    - [X] TITANIC_TRUTH dataset (ground truth)
     - [ ] Optioneel: Dataset opleuken met INNOV8iON gerelateerde data
 - Machine Learning GitHub Project
     - [X] Initiële test: werkt het met onze HANA Instance?
