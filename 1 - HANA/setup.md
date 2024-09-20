@@ -48,6 +48,33 @@ Make sure to subscribe to the **Free Tier** of SAP HANA Cloud in BTP. The SAP HA
 
 4. Upon completion of all the inputs, you should see that the Organization and Space have been set and you will see any service instances or application instances from the target space.
 
+## [6/10] Clone repository
+
+1. Return to the Explorer view and choose **Clone from Git**. Enter the following URL: *https://github.com/SAP-samples/hana-cf-get-started-trial*
+
+2. If asked for the project location, choose the **/home/user/projects/** folder and press OK
+
+3. Upon completion, press the **Open** button in the dialog in the bottom right
+
+## [7/10] Create database artifacts
+
+1. Expand the **SAP HANA PROJECTS** window and press the **Bind** button (plug icon)
+
+2. Choose **Bind to an HDI container** in the first dialog and then choose **Create a new service instance**
+
+![New HDI service instance](img/hana005.png)
+
+    - You might get an error here. Make sure that you have a *hdi-shared* service plan for SAP HANA Schemas & HDI Containers.
+
+3. Accept the default service instance name and wait for the creation to be completed. Occasionally the binding will fail on the first try with a timing issue. If you receive this error, just repeat the process of binding (but this time you will see the HDI container in the list already).
+
+4. We are going to create three databases tables. Copy the following three files (located in this repository under */resources/database_setup/) to the */db*  folder of your HANA project. 
+    - TITANIC.hdbtable ()
+
+4. Once created, return to the **SAP HANA PROJECTS** view. Press the **Deploy** button.
+
+
+
 ## 🤓 Now you are ready to use SAP Business Application Studio to go one-by-one through exercises! 
 
 ### Engage, learn and enjoy!
