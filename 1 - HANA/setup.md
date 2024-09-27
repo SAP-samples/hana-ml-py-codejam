@@ -1,14 +1,14 @@
 # 1) Setting up your SAP HANA Database
 
-## [1/10] Use SAP Business Technology Platform (BTP)
+## [1/9] Use SAP Business Technology Platform (BTP)
 It is assumed that you have access to the SAP Business Technology Platform - either via your organization or via a free trial, as described in [prerequisites](../../prerequisites.md).
 
 If you are using SAP BTP Trial, then open it: https://hanatrial.ondemand.com/
 
-## [2/10] Subscribe to SAP HANA Cloud
+## [2/9] Subscribe to SAP HANA Cloud
 Make sure to subscribe to the **Free Tier** of SAP HANA Cloud in BTP. The SAP HANA Predictive Analysis Library (PAL) is required in order to do the machine learning exercises. At the time of writing, PAL is only available in the Free Tier.
 
-## [3/10] Provision an instance of SAP HANA Cloud
+## [3/9] Provision an instance of SAP HANA Cloud
 
 1. In SAP BTP cockpit, open SAP HANA Cloud Central by clicking on the subscription to SAP HANA Cloud in the **Subscriptions** tab.
 
@@ -29,7 +29,7 @@ Make sure to subscribe to the **Free Tier** of SAP HANA Cloud in BTP. The SAP HA
 
 5. After completing the previous step, you should now have a SAP HANA Cloud instance created. Make sure that it's running before continuing.
 
-## [4/10] Open SAP Business Application Studio (BAS) and create a new dev space
+## [4/9] Open SAP Business Application Studio (BAS) and create a new dev space
 
 1. If you are using the [SAP BTP free trial](https://account.hanatrial.ondemand.com/trial/#/home/trial), then open [SAP Business Application Studio trial](https://triallink.us10.trial.applicationstudio.cloud.sap/) from the "Quick Tool Access" section.
 
@@ -37,7 +37,7 @@ Make sure to subscribe to the **Free Tier** of SAP HANA Cloud in BTP. The SAP HA
 
 3. Once the dev space has been created and it is running, open it.
 
-## [5/10] Configuration of the dev space
+## [5/9] Configuration of the dev space
 
 1. Within BAS, click on the Cloud Foundry targets icon in the left side of the screen.
 
@@ -48,7 +48,7 @@ Make sure to subscribe to the **Free Tier** of SAP HANA Cloud in BTP. The SAP HA
 
 4. Upon completion of all the inputs, you should see that the Organization and Space have been set and you will see any service instances or application instances from the target space.
 
-## [6/10] Clone repository
+## [6/9] Clone repository
 
 1. Return to the Explorer view and choose **Clone from Git**. Enter the following URL: *https://github.com/SAP-samples/hana-cf-get-started-trial*
 
@@ -56,7 +56,7 @@ Make sure to subscribe to the **Free Tier** of SAP HANA Cloud in BTP. The SAP HA
 
 3. Upon completion, press the **Open** button in the dialog in the bottom right
 
-## [7/10] Create database artifacts
+## [7/9] Create database artifacts
 
 1. Expand the **SAP HANA PROJECTS** window and press the **Bind** button (plug icon)
 
@@ -64,22 +64,51 @@ Make sure to subscribe to the **Free Tier** of SAP HANA Cloud in BTP. The SAP HA
 
 ![New HDI service instance](img/hana005.png)
 
-    - You might get an error here. Make sure that you have a *hdi-shared* service plan for SAP HANA Schemas & HDI Containers.
+*You might get an error here. Make sure that you have a *hdi-shared* service plan for SAP HANA Schemas & HDI Containers.*
 
 3. Accept the default service instance name and wait for the creation to be completed. Occasionally the binding will fail on the first try with a timing issue. If you receive this error, just repeat the process of binding (but this time you will see the HDI container in the list already).
 
-4. We are going to create three databases tables. Copy the following three files (located in this repository under */resources/database_setup/) to the */db*  folder of your HANA project. 
-    - TITANIC.hdbtable ()
+4. We are going to create three databases tables. Upload the following three files (located in this repository under */resources/database_setup/*) to the */db/src/*  folder of your HANA project. You can delete the existing *'community.hdbtable'* file if you want.
+    - *TITANIC.hdbtable* (training set)
+    - *TITANIC_TEST.hdbtable* (test set)
+    - *TITANIC_TRUTH.hdbtable* (ground truth for test set)
 
-4. Once created, return to the **SAP HANA PROJECTS** view. Press the **Deploy** button.
+5. When you have finished the previous steps, return to the **SAP HANA PROJECTS** view. Press the **Deploy** button. Wait until the build has finished successfully.
 
+![Deploy database](img/hana005.png)
 
+6. Press the **Open HDI container** button (next to Deploy) to start the Database Explorer. You should be able to see your container with a schema and the three tables.
 
-## 🤓 Now you are ready to use SAP Business Application Studio to go one-by-one through exercises! 
+## [8/9] Load data into the table
 
-### Engage, learn and enjoy!
+1. Open an SQL console in the Database Explorer.
 
-To add: 
-- Step 6-8 of https://developers.sap.com/tutorials/hana-trial-advanced-analytics.html
-- Where to find the files necessary for setting up Titanic database
-- Opzetten users en roles voor toegang
+![SQL console](img/hana005.png)
+
+2. Copy the contents of the three *.sql* files (located in this repository under */resources/database_setup/*) in the SQL console and run the statements. This will fill the the three databases with data. Confirm whether the data has been inserted correctly.
+
+## [9/9] User configuration
+
+1. We need to configure a user that is allowed to access the database and use the Predictive Analysis Library (PAL). Go back to SAP HANA Cloud Central. Select your HANA instance and choose the *Open in SAP HANA Cockpit* action.
+
+![SAP HANA Cockpit](img/hana005.png)
+
+2. In the cockpit, on the top right, click on the user icon and choose **Manage Cards**. Enable the **User & Role Management** card.
+
+![User and Role Management](img/hana005.png)
+
+3. Once the card has been enabled, click on **User Management**.
+
+4. Create a new User here. You can use the default values. For authentication, select **Password**, choose a password of your liking and make sure that **Force Password Change on Next Logon** is set to **No**.
+
+5. Head back to the SAP HANA Cockpit and go to **Role Management**. There are two roles that need to be assigned to our User. Select the role, go to **Assigned Users** and Assign our User to the role.
+    - *DB_1::access_role* : in order to access our database schema
+    - *AFL__SYS_AFL_AFLPAL_EXECUTE_WITH_GRANT_OPTION* : for using PAL
+
+![Role Management](img/hana005.png)
+
+6. After creating the user and assigning the roles, you should be good to go.
+    - The user you created must be supplied in the *user.ini* file of the Machine Learning project.
+    - Also make sure to copy the host address of your database from the SAP HANA Cockpit, as that also needs to be added to the *user.ini* file.
+
+## Now it's time for some epic Machine Learning! 🤖
