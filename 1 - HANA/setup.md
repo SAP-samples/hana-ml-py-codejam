@@ -1,12 +1,14 @@
 # 1) Setting up your SAP HANA Database
 
+In this first chapter of the SAP Machine Learning course, we are going to configure our own SAP HANA Cloud instance and load the data necessary for the machine learning exercises.
+
 ## [1/9] Use SAP Business Technology Platform (BTP)
 It is assumed that you have access to the SAP Business Technology Platform - either via your organization or via a free trial, as described in [prerequisites](../../prerequisites.md).
 
 If you are using SAP BTP Trial, then open it: https://hanatrial.ondemand.com/
 
 ## [2/9] Subscribe to SAP HANA Cloud
-Make sure to subscribe to the **Free Tier** of SAP HANA Cloud in BTP. The SAP HANA Predictive Analysis Library (PAL) is required in order to do the machine learning exercises. At the time of writing, PAL is only available in the Free Tier.
+Make sure to subscribe to the **Free Tier** of SAP HANA Cloud in BTP. The SAP HANA Predictive Analysis Library (PAL) is required in order to do the machine learning exercises. At the time of writing, PAL only seems to be available in the Free Tier.
 
 ## [3/9] Provision an instance of SAP HANA Cloud
 
@@ -75,7 +77,7 @@ Make sure to subscribe to the **Free Tier** of SAP HANA Cloud in BTP. The SAP HA
 
 5. When you have finished the previous steps, return to the **SAP HANA PROJECTS** view. Press the **Deploy** button. Wait until the build has finished successfully.
 
-![Deploy database](img/hana005.png)
+![Deploy database](img/hana007.png)
 
 6. Press the **Open HDI container** button (next to Deploy) to start the Database Explorer. You should be able to see your container with a schema and the three tables.
 
@@ -83,7 +85,7 @@ Make sure to subscribe to the **Free Tier** of SAP HANA Cloud in BTP. The SAP HA
 
 1. Open an SQL console in the Database Explorer.
 
-![SQL console](img/hana005.png)
+![SQL console](img/hana008.png)
 
 2. Copy the contents of the three *.sql* files (located in this repository under */resources/database_setup/*) in the SQL console and run the statements. This will fill the the three databases with data. Confirm whether the data has been inserted correctly.
 
@@ -91,11 +93,11 @@ Make sure to subscribe to the **Free Tier** of SAP HANA Cloud in BTP. The SAP HA
 
 1. We need to configure a user that is allowed to access the database and use the Predictive Analysis Library (PAL). Go back to SAP HANA Cloud Central. Select your HANA instance and choose the *Open in SAP HANA Cockpit* action.
 
-![SAP HANA Cockpit](img/hana005.png)
+![SAP HANA Cockpit](img/hana009.png)
 
 2. In the cockpit, on the top right, click on the user icon and choose **Manage Cards**. Enable the **User & Role Management** card.
 
-![User and Role Management](img/hana005.png)
+![User and Role Management](img/hana010.png)
 
 3. Once the card has been enabled, click on **User Management**.
 
@@ -105,7 +107,7 @@ Make sure to subscribe to the **Free Tier** of SAP HANA Cloud in BTP. The SAP HA
     - *DB_1::access_role* : in order to access our database schema
     - *AFL__SYS_AFL_AFLPAL_EXECUTE_WITH_GRANT_OPTION* : for using PAL
 
-![Role Management](img/hana005.png)
+![Role Management](img/hana011.png)
 
 6. After creating the user and assigning the roles, you should be good to go.
     - The user you created must be supplied in the *user.ini* file of the Machine Learning project.
