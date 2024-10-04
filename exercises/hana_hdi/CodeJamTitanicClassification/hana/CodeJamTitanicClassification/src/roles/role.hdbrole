@@ -1,0 +1,10 @@
+{
+    "role":{
+        "name": "hanaml::CodeJamTitanicClassification",
+        "schema_privileges":[
+                {
+                    "privileges": ["SELECT", "CREATE ANY", "EXECUTE", "INSERT", "DELETE"]
+                }
+        ]
+    }
+}
