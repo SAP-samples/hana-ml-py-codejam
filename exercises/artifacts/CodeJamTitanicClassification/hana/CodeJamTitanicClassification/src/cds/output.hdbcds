@@ -40,4 +40,11 @@ context output {
       TYPE : Integer;
   };
 
+  entity unifiedclassification1_predict_ltresultout0unifiedclassification1predict {
+      PassengerId : Integer;
+      SCORE : String(256);
+      CONFIDENCE : BinaryFloat;
+      REASON_CODE : LargeString;
+  };
+
 };
