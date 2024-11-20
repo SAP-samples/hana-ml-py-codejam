@@ -1,0 +1,28 @@
+PROCEDURE hana_ml_base_pal_unified_classification_predict(
+in in_0_hana_ml_base_pal_unified_classification_predict TABLE("PassengerId" INT, "PClass" INT, "Name" NVARCHAR(200), "Sex" NVARCHAR(1), "Age" INT, "SibSp" INT, "ParCh" INT, "Ticket" NVARCHAR(200), "Fare" INT, "Cabin" NVARCHAR(200), "Embarked" NVARCHAR(1)),
+in in_1_hana_ml_base_pal_unified_classification_predict TABLE("ROW_INDEX" INT, "PART_INDEX" INT, "MODEL_CONTENT" NCLOB),
+out out_0_hana_ml_base_pal_unified_classification_predict TABLE("PassengerId" INT, "SCORE" NVARCHAR(256), "CONFIDENCE" DOUBLE, "REASON_CODE" NCLOB),
+out out_1_hana_ml_base_pal_unified_classification_predict TABLE("OBJECT" NVARCHAR(10), "KEY0" NVARCHAR(10), "VALUE" NVARCHAR(10)))
+LANGUAGE SQLSCRIPT
+SQL SECURITY INVOKER
+AS
+BEGIN
+DECLARE param_name VARCHAR(5000) ARRAY;
+DECLARE int_value INTEGER ARRAY;
+DECLARE double_value DOUBLE ARRAY;
+DECLARE string_value VARCHAR(5000) ARRAY;
+param_name[1] := N'FUNCTION';
+int_value[1] := NULL;
+double_value[1] := NULL;
+string_value[1] := N'RDT';
+param_name[2] := N'HANDLE_MISSING_VALUE';
+int_value[2] := 0;
+double_value[2] := NULL;
+string_value[2] := NULL;
+params = UNNEST(:param_name, :int_value, :double_value, :string_value);
+in_0 = SELECT * FROM :in_0_hana_ml_base_pal_unified_classification_predict;
+in_1 = SELECT * FROM :in_1_hana_ml_base_pal_unified_classification_predict;
+CALL "SYSAFL::PALUNIFIEDCLASSIFICATIONPREDICT"(:in_0, :in_1, :params, out_0, out_1);
+out_0_hana_ml_base_pal_unified_classification_predict = SELECT * FROM :out_0;
+out_1_hana_ml_base_pal_unified_classification_predict = SELECT * FROM :out_1;
+END

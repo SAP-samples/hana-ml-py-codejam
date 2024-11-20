@@ -1,0 +1,26 @@
+{
+    "HANA_ML_TITANIC": {
+        "target": {
+            "object": "TITANIC",
+            "schema": "DB_1"
+        }
+    },
+    "SYSAFL::PALUNIFIEDCLASSIFICATION": {
+        "target": {
+            "object": "PAL_UNIFIED_CLASSIFICATION",
+            "schema": "_SYS_AFL"
+        }
+    },
+    "HANA_ML_TITANIC_TEST": {
+        "target": {
+            "object": "TITANIC_TEST",
+            "schema": "DB_1"
+        }
+    },
+    "SYSAFL::PALUNIFIEDCLASSIFICATIONPREDICT": {
+        "target": {
+            "object": "PAL_UNIFIED_CLASSIFICATION_PREDICT",
+            "schema": "_SYS_AFL"
+        }
+    }
+}

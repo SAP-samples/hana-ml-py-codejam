@@ -1,0 +1,3 @@
+VIEW hana_ml_Predict_ConsumeHanaMlApplyFuncPalUnifiedClassificationPredict AS SELECT
+  *
+FROM hana_ml_Predict_HanaMlApplyFuncPalUnifiedClassificationPredict();

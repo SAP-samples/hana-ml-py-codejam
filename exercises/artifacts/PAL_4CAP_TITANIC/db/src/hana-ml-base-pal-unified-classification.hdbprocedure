@@ -1,0 +1,66 @@
+PROCEDURE hana_ml_base_pal_unified_classification(
+in in_0_hana_ml_base_pal_unified_classification TABLE("PassengerId" INT, "PClass" INT, "Name" NVARCHAR(200), "Sex" NVARCHAR(1), "Age" INT, "SibSp" INT, "ParCh" INT, "Ticket" NVARCHAR(200), "Fare" INT, "Cabin" NVARCHAR(200), "Embarked" NVARCHAR(1), "Survived" INT),
+out out_0_hana_ml_base_pal_unified_classification TABLE("ROW_INDEX" INT, "PART_INDEX" INT, "MODEL_CONTENT" NCLOB),
+out out_1_hana_ml_base_pal_unified_classification TABLE("VARIABLE_NAME" NVARCHAR(256), "IMPORTANCE" DOUBLE),
+out out_2_hana_ml_base_pal_unified_classification TABLE("STAT_NAME" NVARCHAR(256), "STAT_VALUE" NVARCHAR(1000), "CLASS_NAME" NVARCHAR(256)),
+out out_3_hana_ml_base_pal_unified_classification TABLE("PARAM_NAME" NVARCHAR(256), "INT_VALUE" INT, "DOUBLE_VALUE" DOUBLE, "STRING_VALUE" NVARCHAR(1000)),
+out out_4_hana_ml_base_pal_unified_classification TABLE("ACTUAL_CLASS" NVARCHAR(1000), "PREDICTED_CLASS" NVARCHAR(1000), "COUNT" INT),
+out out_5_hana_ml_base_pal_unified_classification TABLE("NAME" NVARCHAR(256), "X" DOUBLE, "Y" DOUBLE),
+out out_6_hana_ml_base_pal_unified_classification TABLE("PassengerId" INT, "TYPE" INT),
+out out_7_hana_ml_base_pal_unified_classification TABLE("OBJECT" NVARCHAR(10), "KEY0" NVARCHAR(10), "VALUE" NVARCHAR(10)))
+LANGUAGE SQLSCRIPT
+SQL SECURITY INVOKER
+AS
+BEGIN
+DECLARE param_name VARCHAR(5000) ARRAY;
+DECLARE int_value INTEGER ARRAY;
+DECLARE double_value DOUBLE ARRAY;
+DECLARE string_value VARCHAR(5000) ARRAY;
+param_name[1] := N'FUNCTION';
+int_value[1] := NULL;
+double_value[1] := NULL;
+string_value[1] := N'RDT';
+param_name[2] := N'KEY';
+int_value[2] := 1;
+double_value[2] := NULL;
+string_value[2] := NULL;
+param_name[3] := N'PARTITION_METHOD';
+int_value[3] := 2;
+double_value[3] := NULL;
+string_value[3] := NULL;
+param_name[4] := N'PARTITION_STRATIFIED_VARIABLE';
+int_value[4] := NULL;
+double_value[4] := NULL;
+string_value[4] := N'Survived';
+param_name[5] := N'PARTITION_RANDOM_SEED';
+int_value[5] := 2;
+double_value[5] := NULL;
+string_value[5] := NULL;
+param_name[6] := N'PARTITION_TRAINING_PERCENT';
+int_value[6] := NULL;
+double_value[6] := 0.8;
+string_value[6] := NULL;
+param_name[7] := N'OUTPUT_PARTITION_RESULT';
+int_value[7] := 1;
+double_value[7] := NULL;
+string_value[7] := NULL;
+param_name[8] := N'HANDLE_MISSING_VALUE';
+int_value[8] := 0;
+double_value[8] := NULL;
+string_value[8] := NULL;
+param_name[9] := N'CATEGORICAL_VARIABLE';
+int_value[9] := NULL;
+double_value[9] := NULL;
+string_value[9] := N'Survived';
+params = UNNEST(:param_name, :int_value, :double_value, :string_value);
+in_0 = SELECT * FROM :in_0_hana_ml_base_pal_unified_classification;
+CALL "SYSAFL::PALUNIFIEDCLASSIFICATION"(:in_0, :params, out_0, out_1, out_2, out_3, out_4, out_5, out_6, out_7);
+out_0_hana_ml_base_pal_unified_classification = SELECT * FROM :out_0;
+out_1_hana_ml_base_pal_unified_classification = SELECT * FROM :out_1;
+out_2_hana_ml_base_pal_unified_classification = SELECT * FROM :out_2;
+out_3_hana_ml_base_pal_unified_classification = SELECT * FROM :out_3;
+out_4_hana_ml_base_pal_unified_classification = SELECT * FROM :out_4;
+out_5_hana_ml_base_pal_unified_classification = SELECT * FROM :out_5;
+out_6_hana_ml_base_pal_unified_classification = SELECT * FROM :out_6;
+out_7_hana_ml_base_pal_unified_classification = SELECT * FROM :out_7;
+END
