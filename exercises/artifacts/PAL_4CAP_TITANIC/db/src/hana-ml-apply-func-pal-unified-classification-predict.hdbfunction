@@ -1,5 +1,5 @@
 FUNCTION hana_ml_Predict_HanaMlApplyFuncPalUnifiedClassificationPredict() RETURNS TABLE(
-"PassengerId" INT,
+"PASSENGERID" INT,
 "SCORE" NVARCHAR(256),
 "CONFIDENCE" DOUBLE,
 "REASON_CODE" NCLOB)
@@ -20,7 +20,7 @@ double_value[2] := NULL;
 string_value[2] := NULL;
 params = UNNEST(:param_name, :int_value, :double_value, :string_value);
 
-in_0 = SELECT "PassengerId", "PClass", "Name", "Sex", "Age", "SibSp", "ParCh", "Ticket", "Fare", "Cabin", "Embarked" FROM (SELECT * FROM HANA_ML_TITANIC_TEST) AS "DT_18";
+in_0 = SELECT "PASSENGERID", "PCLASS", "NAME", "SEX", "AGE", "SIBSP", "PARCH", "TICKET", "FARE", "CABIN", "EMBARKED" FROM (SELECT * FROM HANA_ML_TITANIC_TEST) AS "DT_124";
 in_1 = SELECT * FROM HANA_ML_FIT_MODELHANAMLCONSPALUNIFIEDCLASSIFICATION;
 CALL "SYSAFL::PALUNIFIEDCLASSIFICATIONPREDICT"(:in_0, :in_1, :params, out_0, out_1);
 RETURN SELECT * FROM :out_0;

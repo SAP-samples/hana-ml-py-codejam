@@ -5,13 +5,13 @@ out out_2_hana_ml_cons_pal_unified_classification TABLE("STAT_NAME" NVARCHAR(256
 out out_3_hana_ml_cons_pal_unified_classification TABLE("PARAM_NAME" NVARCHAR(256), "INT_VALUE" INT, "DOUBLE_VALUE" DOUBLE, "STRING_VALUE" NVARCHAR(1000)),
 out out_4_hana_ml_cons_pal_unified_classification TABLE("ACTUAL_CLASS" NVARCHAR(1000), "PREDICTED_CLASS" NVARCHAR(1000), "COUNT" INT),
 out out_5_hana_ml_cons_pal_unified_classification TABLE("NAME" NVARCHAR(256), "X" DOUBLE, "Y" DOUBLE),
-out out_6_hana_ml_cons_pal_unified_classification TABLE("PassengerId" INT, "TYPE" INT),
+out out_6_hana_ml_cons_pal_unified_classification TABLE("PASSENGERID" INT, "TYPE" INT),
 out out_7_hana_ml_cons_pal_unified_classification TABLE("OBJECT" NVARCHAR(10), "KEY0" NVARCHAR(10), "VALUE" NVARCHAR(10)))
 LANGUAGE SQLSCRIPT
 SQL SECURITY INVOKER
 AS
 BEGIN
-in_0_hana_ml_cons_pal_unified_classification = SELECT "PassengerId", "PClass", "Name", "Sex", "Age", "SibSp", "ParCh", "Ticket", "Fare", "Cabin", "Embarked", "Survived" FROM (SELECT * FROM HANA_ML_TITANIC) AS "DT_2";
+in_0_hana_ml_cons_pal_unified_classification = SELECT "PASSENGERID", "PCLASS", "NAME", "SEX", "AGE", "SIBSP", "PARCH", "TICKET", "FARE", "CABIN", "EMBARKED", "SURVIVED" FROM (SELECT * FROM HANA_ML_TITANIC) AS "DT_108";
 CALL hana_ml_base_pal_unified_classification(:in_0_hana_ml_cons_pal_unified_classification, out_0_hana_ml_cons_pal_unified_classification, out_1_hana_ml_cons_pal_unified_classification, out_2_hana_ml_cons_pal_unified_classification, out_3_hana_ml_cons_pal_unified_classification, out_4_hana_ml_cons_pal_unified_classification, out_5_hana_ml_cons_pal_unified_classification, out_6_hana_ml_cons_pal_unified_classification, out_7_hana_ml_cons_pal_unified_classification);
 TRUNCATE TABLE HANA_ML_FIT_MODELHANAMLCONSPALUNIFIEDCLASSIFICATION;
 INSERT INTO HANA_ML_FIT_MODELHANAMLCONSPALUNIFIEDCLASSIFICATION SELECT * FROM :out_0_hana_ml_cons_pal_unified_classification;

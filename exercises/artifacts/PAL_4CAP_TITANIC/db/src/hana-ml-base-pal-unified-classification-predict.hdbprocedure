@@ -1,7 +1,7 @@
 PROCEDURE hana_ml_base_pal_unified_classification_predict(
-in in_0_hana_ml_base_pal_unified_classification_predict TABLE("PassengerId" INT, "PClass" INT, "Name" NVARCHAR(200), "Sex" NVARCHAR(1), "Age" INT, "SibSp" INT, "ParCh" INT, "Ticket" NVARCHAR(200), "Fare" INT, "Cabin" NVARCHAR(200), "Embarked" NVARCHAR(1)),
+in in_0_hana_ml_base_pal_unified_classification_predict TABLE("PASSENGERID" INT, "PCLASS" INT, "NAME" NVARCHAR(200), "SEX" NVARCHAR(1), "AGE" INT, "SIBSP" INT, "PARCH" INT, "TICKET" NVARCHAR(200), "FARE" INT, "CABIN" NVARCHAR(200), "EMBARKED" NVARCHAR(1)),
 in in_1_hana_ml_base_pal_unified_classification_predict TABLE("ROW_INDEX" INT, "PART_INDEX" INT, "MODEL_CONTENT" NCLOB),
-out out_0_hana_ml_base_pal_unified_classification_predict TABLE("PassengerId" INT, "SCORE" NVARCHAR(256), "CONFIDENCE" DOUBLE, "REASON_CODE" NCLOB),
+out out_0_hana_ml_base_pal_unified_classification_predict TABLE("PASSENGERID" INT, "SCORE" NVARCHAR(256), "CONFIDENCE" DOUBLE, "REASON_CODE" NCLOB),
 out out_1_hana_ml_base_pal_unified_classification_predict TABLE("OBJECT" NVARCHAR(10), "KEY0" NVARCHAR(10), "VALUE" NVARCHAR(10)))
 LANGUAGE SQLSCRIPT
 SQL SECURITY INVOKER

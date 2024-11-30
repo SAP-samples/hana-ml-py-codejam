@@ -10,13 +10,13 @@
             ],
             "schema_privileges": [
                 {
-                    "reference": "INNOV8ION_USER1",
+                    "reference": "DB_1",
                     "privileges_with_grant_option": [
                         "SELECT"
                     ]
                 },
                 {
-                    "reference": "DB_1",
+                    "reference": "INNOV8ION_USER1",
                     "privileges_with_grant_option": [
                         "SELECT"
                     ]
@@ -33,13 +33,13 @@
             ],
             "schema_privileges": [
                 {
-                    "reference": "INNOV8ION_USER1",
+                    "reference": "DB_1",
                     "privileges_with_grant_option": [
                         "SELECT"
                     ]
                 },
                 {
-                    "reference": "DB_1",
+                    "reference": "INNOV8ION_USER1",
                     "privileges_with_grant_option": [
                         "SELECT"
                     ]

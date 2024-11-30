@@ -1,11 +1,11 @@
 PROCEDURE hana_ml_cons_pal_unified_classification_predict(
-out out_0_hana_ml_cons_pal_unified_classification_predict TABLE("PassengerId" INT, "SCORE" NVARCHAR(256), "CONFIDENCE" DOUBLE, "REASON_CODE" NCLOB),
+out out_0_hana_ml_cons_pal_unified_classification_predict TABLE("PASSENGERID" INT, "SCORE" NVARCHAR(256), "CONFIDENCE" DOUBLE, "REASON_CODE" NCLOB),
 out out_1_hana_ml_cons_pal_unified_classification_predict TABLE("OBJECT" NVARCHAR(10), "KEY0" NVARCHAR(10), "VALUE" NVARCHAR(10)))
 LANGUAGE SQLSCRIPT
 SQL SECURITY INVOKER
 AS
 BEGIN
-in_0_hana_ml_cons_pal_unified_classification_predict = SELECT "PassengerId", "PClass", "Name", "Sex", "Age", "SibSp", "ParCh", "Ticket", "Fare", "Cabin", "Embarked" FROM (SELECT * FROM HANA_ML_TITANIC_TEST) AS "DT_18";
+in_0_hana_ml_cons_pal_unified_classification_predict = SELECT "PASSENGERID", "PCLASS", "NAME", "SEX", "AGE", "SIBSP", "PARCH", "TICKET", "FARE", "CABIN", "EMBARKED" FROM (SELECT * FROM HANA_ML_TITANIC_TEST) AS "DT_124";
 in_1_hana_ml_cons_pal_unified_classification_predict = SELECT * FROM HANA_ML_FIT_MODELHANAMLCONSPALUNIFIEDCLASSIFICATION;
 CALL hana_ml_base_pal_unified_classification_predict(:in_0_hana_ml_cons_pal_unified_classification_predict, :in_1_hana_ml_cons_pal_unified_classification_predict, out_0_hana_ml_cons_pal_unified_classification_predict, out_1_hana_ml_cons_pal_unified_classification_predict);
 TRUNCATE TABLE HANA_ML_PREDICT_OUTPUT0PALUNIFIEDCLASSIFICATIONPREDICT;

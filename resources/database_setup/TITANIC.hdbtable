@@ -1,14 +1,14 @@
 column table "TITANIC"(
-  "PassengerId" integer PRIMARY KEY,
-  "Survived" integer,
-  "PClass" integer,
-  "Name" nvarchar(200),
-  "Sex" nvarchar(1),
-  "Age" integer,
-  "SibSp" integer,
-  "ParCh" integer,
-  "Ticket" nvarchar(200),
-  "Fare" integer,
-  "Cabin" nvarchar(200),
-  "Embarked" nvarchar(1)
+  "PASSENGERID" integer PRIMARY KEY,
+  "SURVIVED" integer,
+  "PCLASS" integer,
+  "NAME" nvarchar(200),
+  "SEX" nvarchar(1),
+  "AGE" integer,
+  "SIBSP" integer,
+  "PARCH" integer,
+  "TICKET" nvarchar(200),
+  "FARE" integer,
+  "CABIN" nvarchar(200),
+  "EMBARKED" nvarchar(1)
 )

@@ -1,12 +1,12 @@
 PROCEDURE hana_ml_base_pal_unified_classification(
-in in_0_hana_ml_base_pal_unified_classification TABLE("PassengerId" INT, "PClass" INT, "Name" NVARCHAR(200), "Sex" NVARCHAR(1), "Age" INT, "SibSp" INT, "ParCh" INT, "Ticket" NVARCHAR(200), "Fare" INT, "Cabin" NVARCHAR(200), "Embarked" NVARCHAR(1), "Survived" INT),
+in in_0_hana_ml_base_pal_unified_classification TABLE("PASSENGERID" INT, "PCLASS" INT, "NAME" NVARCHAR(200), "SEX" NVARCHAR(1), "AGE" INT, "SIBSP" INT, "PARCH" INT, "TICKET" NVARCHAR(200), "FARE" INT, "CABIN" NVARCHAR(200), "EMBARKED" NVARCHAR(1), "SURVIVED" INT),
 out out_0_hana_ml_base_pal_unified_classification TABLE("ROW_INDEX" INT, "PART_INDEX" INT, "MODEL_CONTENT" NCLOB),
 out out_1_hana_ml_base_pal_unified_classification TABLE("VARIABLE_NAME" NVARCHAR(256), "IMPORTANCE" DOUBLE),
 out out_2_hana_ml_base_pal_unified_classification TABLE("STAT_NAME" NVARCHAR(256), "STAT_VALUE" NVARCHAR(1000), "CLASS_NAME" NVARCHAR(256)),
 out out_3_hana_ml_base_pal_unified_classification TABLE("PARAM_NAME" NVARCHAR(256), "INT_VALUE" INT, "DOUBLE_VALUE" DOUBLE, "STRING_VALUE" NVARCHAR(1000)),
 out out_4_hana_ml_base_pal_unified_classification TABLE("ACTUAL_CLASS" NVARCHAR(1000), "PREDICTED_CLASS" NVARCHAR(1000), "COUNT" INT),
 out out_5_hana_ml_base_pal_unified_classification TABLE("NAME" NVARCHAR(256), "X" DOUBLE, "Y" DOUBLE),
-out out_6_hana_ml_base_pal_unified_classification TABLE("PassengerId" INT, "TYPE" INT),
+out out_6_hana_ml_base_pal_unified_classification TABLE("PASSENGERID" INT, "TYPE" INT),
 out out_7_hana_ml_base_pal_unified_classification TABLE("OBJECT" NVARCHAR(10), "KEY0" NVARCHAR(10), "VALUE" NVARCHAR(10)))
 LANGUAGE SQLSCRIPT
 SQL SECURITY INVOKER
@@ -31,7 +31,7 @@ string_value[3] := NULL;
 param_name[4] := N'PARTITION_STRATIFIED_VARIABLE';
 int_value[4] := NULL;
 double_value[4] := NULL;
-string_value[4] := N'Survived';
+string_value[4] := N'SURVIVED';
 param_name[5] := N'PARTITION_RANDOM_SEED';
 int_value[5] := 2;
 double_value[5] := NULL;
@@ -51,7 +51,7 @@ string_value[8] := NULL;
 param_name[9] := N'CATEGORICAL_VARIABLE';
 int_value[9] := NULL;
 double_value[9] := NULL;
-string_value[9] := N'Survived';
+string_value[9] := N'SURVIVED';
 params = UNNEST(:param_name, :int_value, :double_value, :string_value);
 in_0 = SELECT * FROM :in_0_hana_ml_base_pal_unified_classification;
 CALL "SYSAFL::PALUNIFIEDCLASSIFICATION"(:in_0, :params, out_0, out_1, out_2, out_3, out_4, out_5, out_6, out_7);
