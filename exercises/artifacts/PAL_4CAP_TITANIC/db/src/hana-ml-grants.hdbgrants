@@ -1,0 +1,50 @@
+{
+    "ServiceName_1": {
+        "object_owner": {
+            "global_roles": [
+                {
+                    "roles": [
+                        "AFL__SYS_AFL_AFLPAL_EXECUTE"
+                    ]
+                }
+            ],
+            "schema_privileges": [
+                {
+                    "reference": "DB_1",
+                    "privileges_with_grant_option": [
+                        "SELECT"
+                    ]
+                },
+                {
+                    "reference": "INNOV8ION_USER1",
+                    "privileges_with_grant_option": [
+                        "SELECT"
+                    ]
+                }
+            ]
+        },
+        "application_user": {
+            "global_roles": [
+                {
+                    "roles": [
+                        "AFL__SYS_AFL_AFLPAL_EXECUTE"
+                    ]
+                }
+            ],
+            "schema_privileges": [
+                {
+                    "reference": "DB_1",
+                    "privileges_with_grant_option": [
+                        "SELECT"
+                    ]
+                },
+                {
+                    "reference": "INNOV8ION_USER1",
+                    "privileges_with_grant_option": [
+                        "SELECT"
+                    ]
+                }
+            ]
+        }
+    }
+}

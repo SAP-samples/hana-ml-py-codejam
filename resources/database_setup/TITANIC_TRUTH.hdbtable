@@ -1,4 +1,4 @@
-column table "TITANIC"(
+column table "TITANIC_TRUTH"(
   "passengerId" integer PRIMARY KEY,
   "survived" integer,
   "pclass" integer,
