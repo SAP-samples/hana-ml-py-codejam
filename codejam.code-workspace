@@ -10,7 +10,8 @@
 			"/usr/bin/python3",
 			"~/.asdf-inst/shims/python",
 			"~/.asdf-inst/shims/python3",
-			"~/.asdf-inst/shims/python3.11"
+			"~/.asdf-inst/shims/python3.11",
+			"~/.asdf-inst/shims/python3.13"
 		],
 	}
 }
