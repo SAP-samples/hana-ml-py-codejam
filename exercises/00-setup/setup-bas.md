@@ -125,7 +125,7 @@ python -m pip install --require-virtualenv --no-cache-dir ipykernel
 2. the [Python machine learning client for SAP HANA](https://pypi.org/project/hana-ml/) (`hana-ml`) and other required dependencies listed in https://help.sap.com/doc/cd94b08fe2e041c2ba778374572ddba9/2024_1_QRC/en-US/Installation.html#installation-guide using the following command:
 
 ```shell
-python -m pip install --require-virtualenv --no-cache-dir -U 'hana-ml==2.22.*' ipywidgets 'jinja2>=3.0.0' pydotplus graphviz 'shapely>=1.7.1' 'matplotlib' plotly setuptools
+python -m pip install --require-virtualenv --no-cache-dir -U 'hana-ml<2.24' ipywidgets graphviz plotly setuptools
 ```
 
 ![Install hana-ml and dependencies](img/setup0100.png)
@@ -150,7 +150,7 @@ The notebook should open in a Jupyter extension.
 
 Next, select a kernel `env` (the virtual environment you set up earlier) from **Python Environments**.
 
-![Select the kernel](img/setup0111.png)
+![Select the kernel](img/setup0112.png)
 
 The kernel should be set in a few seconds. You should get messages about Jupyter server processes started in the background ready to execute code from your notebook.
 
