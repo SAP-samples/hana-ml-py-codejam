@@ -13,5 +13,6 @@
 			"~/.asdf-inst/shims/python3.11",
 			"~/.asdf-inst/shims/python3.13"
 		],
+		"python.defaultInterpreterPath": "env/bin/python",
 	}
 }
