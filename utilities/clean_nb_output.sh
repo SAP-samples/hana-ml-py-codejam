@@ -1,0 +1,1 @@
+jupyter nbconvert --ClearOutputPreprocessor.enabled=True --inplace ../exercises/*.ipynb
