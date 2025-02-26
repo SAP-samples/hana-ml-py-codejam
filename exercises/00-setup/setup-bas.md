@@ -117,7 +117,7 @@ Install:
 1. the `ipykernel` package to be able to run Python code in a Jupyter extension using the following command:
 
 ```shell
-python -m pip install --require-virtualenv --no-cache-dir ipykernel
+python -m pip install --require-virtualenv -U ipykernel
 ```
 
 ![Install ipykernel](img/setup0090.png)
@@ -125,7 +125,7 @@ python -m pip install --require-virtualenv --no-cache-dir ipykernel
 2. the [Python machine learning client for SAP HANA](https://pypi.org/project/hana-ml/) (`hana-ml`) and other required dependencies listed in https://help.sap.com/doc/cd94b08fe2e041c2ba778374572ddba9/2024_1_QRC/en-US/Installation.html#installation-guide using the following command:
 
 ```shell
-python -m pip install --require-virtualenv --no-cache-dir -U 'hana-ml<2.24' ipywidgets graphviz plotly setuptools
+python -m pip install --require-virtualenv -U 'hana-ml<2.24' ipywidgets graphviz
 ```
 
 ![Install hana-ml and dependencies](img/setup0100.png)
@@ -133,7 +133,7 @@ python -m pip install --require-virtualenv --no-cache-dir -U 'hana-ml<2.24' ipyw
 3. Install Jupyter's own [utilities for programmatic work with notebook documents](https://docs.jupyter.org/en/latest/projects/conversion.html): `nbformat` to be able to run one notebook from another, and `nbconvert` to be able to clean the output of notebooks, eg. before pushing to the Git repository, using the following command:
 
 ```shell
-python -m pip install --require-virtualenv --no-cache-dir nbformat nbconvert
+python -m pip install --require-virtualenv -U nbformat nbconvert
 ```
 
 ![Install nbformat and nbconvert](img/setup0102.png)
