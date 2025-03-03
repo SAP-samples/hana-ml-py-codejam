@@ -117,7 +117,7 @@ Install:
 1. the `ipykernel` package to be able to run Python code in a Jupyter extension using the following command:
 
 ```shell
-python -m pip install --require-virtualenv -U ipykernel
+python -m pip install --require-virtualenv -U 'ipykernel<7' 'ipython<9'
 ```
 
 ![Install ipykernel](img/setup0090.png)
