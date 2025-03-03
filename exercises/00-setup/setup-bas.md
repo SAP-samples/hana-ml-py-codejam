@@ -114,41 +114,33 @@ You should see you are in a virtual environment as indicated by the `(env)` pref
 
 Install:
 
-1. the `ipykernel` package to be able to run Python code in a Jupyter extension using the following command:
+1. the `ipykernel` package to be able to run Python code in a Jupyter extension, and Jupyter's own [utilities for programmatic work with notebook documents](https://docs.jupyter.org/en/latest/projects/conversion.html): `nbformat` to be able to run one notebook from another, and `nbconvert` to be able to clean the output of notebooks, eg. before pushing to the Git repository, using the following command:
 
 ```shell
-python -m pip install --require-virtualenv -U 'ipykernel<7' 'ipython<9'
+python -m pip install --require-virtualenv -U 'ipykernel<7' 'ipython<9' 'nbformat' 'nbconvert'
 ```
 
-![Install ipykernel](img/setup0090.png)
+![Install ipykernel](img/setup0091.png)
 
 2. the [Python machine learning client for SAP HANA](https://pypi.org/project/hana-ml/) (`hana-ml`) and other required dependencies listed in https://help.sap.com/doc/cd94b08fe2e041c2ba778374572ddba9/2024_1_QRC/en-US/Installation.html#installation-guide using the following command:
 
 ```shell
-python -m pip install --require-virtualenv -U 'hana-ml<2.24' ipywidgets graphviz
+python -m pip install --require-virtualenv -U 'hana-ml<2.24' 'ipywidgets' 'graphviz'
 ```
 
-![Install hana-ml and dependencies](img/setup0100.png)
-
-3. Install Jupyter's own [utilities for programmatic work with notebook documents](https://docs.jupyter.org/en/latest/projects/conversion.html): `nbformat` to be able to run one notebook from another, and `nbconvert` to be able to clean the output of notebooks, eg. before pushing to the Git repository, using the following command:
-
-```shell
-python -m pip install --require-virtualenv -U nbformat nbconvert
-```
-
-![Install nbformat and nbconvert](img/setup0102.png)
+![Install hana-ml and dependencies](img/setup0101.png)
 
 ## [10/10] Open the "Check Setup" notebook from the exercises
 
 In your BAS hide the terminal.
 
-![Hide the terminal](img/setup0108.png)
+![Hide the terminal](img/setup0108b.png)
 
-Go to Explorer and open a `exercises/010-check_setup.ipynb` notebook. 
+Go to Explorer in the SAP Business Application Studio, and open a `exercises/010-check_setup.ipynb` notebook. 
 
-The notebook should open in a Jupyter extension.
+The notebook should open.
 
-Next, select a kernel `env` (the virtual environment you set up earlier) from **Python Environments**.
+Next, **if** the [kernel](https://code.visualstudio.com/docs/datascience/jupyter-kernel-management) `env` is not automatically selected, open the kernel picker by clicking on **Select Kernel** on the upper right-hand corner of your notebook and select a kernel `env` (the virtual environment you set up earlier) from **Python Environments**.
 
 ![Select the kernel](img/setup0112.png)
 
@@ -156,6 +148,4 @@ The kernel should be set in a few seconds. You should get messages about Jupyter
 
 ![Ready to go!](img/setup0120.png)
 
-## 🤓 Now you are ready to use SAP Business Application Studio to go one-by-one through exercises! 
-
-### Engage, learn and enjoy!
+## 🤓 Now you are ready to use SAP Business Application Studio for the exercises. Wait for the rest of the group to get to that same point. The SAP CodeJam instructor will share the required database user and password details to everyone at the same time!
