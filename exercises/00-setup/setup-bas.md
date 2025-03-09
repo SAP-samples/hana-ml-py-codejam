@@ -68,7 +68,11 @@ You should see:
 
 > SAP provides you with a mechanism to access third-party sites to view and download open-source, 3rd party or its own tools, libraries, or software components ("Extensions") to dev spaces in SAP Business Application Studio. Using this mechanism, you can view and install VS Code Extensions from the [VSX Open Registry](https://open-vsx.org/) at your own risk.
 
-Go to **Extensions** using the activity bar (the left-most bar in the IDE) and type `@builtin Py` in the search bar. 
+Go to **Extensions** using the activity bar (the left-most bar in the IDE). If you see the disclaimer, but cannot close it, then extend it width until you see the **OK** button. Click **OK** butter after reading the disclaimer.
+
+![Disclaimer's OK button](img/setup0052.png)
+
+Make sure you are in **Extensions** and type `@builtin Py` in the search bar. 
 
 You should see **Python** and **Jupyter** extensions installed already.
 
