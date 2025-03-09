@@ -135,6 +135,14 @@ python -m pip install --require-virtualenv -U 'hana-ml<2.24' 'ipywidgets' 'graph
 
 ![Install hana-ml and dependencies](img/setup0101.png)
 
+Now, check all required packages are installed:
+
+```shell
+python -m pip list --not-required
+```
+
+![PyPI packages without dependencies](img/setup0103.png)
+
 ## [10/10] Open the "Check Setup" notebook from the exercises
 
 In your BAS hide the terminal.
@@ -149,8 +157,8 @@ Next, **if** the [kernel](https://code.visualstudio.com/docs/datascience/jupyter
 
 ![Select the kernel](img/setup0112.png)
 
-The kernel should be set in a few seconds. You should get messages about Jupyter server processes started in the background ready to execute code from your notebook.
+Should you get messages about Jupyter server processes started in the background, click on the Settings icon and turn off informations and warnings from this extension.
 
-![Ready to go!](img/setup0120.png)
+![Ready to go!](img/setup0121.png)
 
 ## 🤓 Now you are ready to use SAP Business Application Studio for the exercises. Wait for the rest of the group to get to that same point. The SAP CodeJam instructor will share the required database user and password details to everyone at the same time!
