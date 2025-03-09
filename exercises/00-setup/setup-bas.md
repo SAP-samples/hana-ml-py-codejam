@@ -59,8 +59,9 @@ If you missed the previous dialog, then you can go to the BAS Explorer, click on
 ![Open a workspace](img/setup0045.png)
 
 You should see:
-* **CODEJAM** as the workspace at the root of the hierarchy of the project, and
-* **`hana-ml-py-codejam`** as the name of the top level folder.
+* **CODEJAM** as the workspace at the root, and
+* **`hana-ml-py-codejam`** as the name of the top level project folder.
+* 👉🏼 The top level project folder **should not say `hana-ml-py-codejam-1`** or have any other number ending! This would mean you cloned the repository too many times, and you are in the wrong folder! Ask your SAP CodeJam instructor how to fix it.
 
 ![Open a workspace](img/setup0047.png)
 
