@@ -112,7 +112,7 @@ source ~/projects/hana-ml-py-codejam/env/bin/activate
 
 You should see you are in a virtual environment as indicated by the `(env)` prefix in a shell's prompt.
 
-![Activate the venv](img/setup0080.png)
+![Activate the venv](img/setup0081.png)
 
 ## [9/10] Install required Python packages in the virtual environment
 
