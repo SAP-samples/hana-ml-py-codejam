@@ -10,13 +10,13 @@ If you are using the [SAP BTP free trial](https://account.hanatrial.ondemand.com
 
 ![Open BAS Trial](img/setup0010.png)
 
-Should you have issues opening SAP Business Application Studio (for example when you have had the account for a long time), then check the steps in [this tutorial - Set Up SAP Business Application Studio for Development](https://developers.sap.com/tutorials/appstudio-onboarding.html)
+Should you have issues opening SAP Business Application Studio (for example, when you have had the account for a long time), then check the steps in [this tutorial - Set Up SAP Business Application Studio for Development](https://developers.sap.com/tutorials/appstudio-onboarding.html)
 
 ## [3/10] Create a new Dev Space for CodeJam exercises
 
 Go to your instance of SAP Business Application Studio (further referred to as "BAS").
 
-For this SAP CodeJam exercise create a new Dev Space called `CodeJamHANAML` of a kind **Basic** with an additional extension **Python Tools** in BAS:
+For this SAP CodeJam exercise, create a new Dev Space called `CodeJamHANAML` of a kind **Basic** with an additional extension **Python Tools** in BAS:
 
 |Screen element|Value|
 |-|-|
@@ -30,7 +30,7 @@ You should see the dev space **STARTING**.
 
 ![Dev Space is Starting](img/setup0023.png)
 
-Wait for the dev space to get into the **RUNNING** state and then open that dev space.
+Wait for the dev space to enter the **RUNNING** state and then open that dev space.
 
 ![Dev Space is Running](img/setup0026.png)
 
@@ -50,7 +50,7 @@ Click **Open** to open a project in the Explorer view.
 
 ## [5/10] Open the Workspace
 
-The cloned repository contains a file `codejam.code-workspace` and therefore you will be asked, if you want to open it. Click **Open Workspace**.
+The cloned repository contains a file `codejam.code-workspace` and therefore you will be asked, whether you want to open it. Click **Open Workspace**.
 
 ![Automatic notification to open a workspace](img/setup0042.png)
 
@@ -60,7 +60,7 @@ If you missed the previous dialog, then you can go to the BAS Explorer, click on
 
 You should see:
 * **CODEJAM** as the workspace at the root, and
-* **`hana-ml-py-codejam`** as the name of the top level project folder.
+* **`hana-ml-py-codejam`** as the name of the top-level project folder.
 * 👉🏼 The top level project folder **should not say `hana-ml-py-codejam-1`** or have any other number ending! This would mean you cloned the repository too many times, and you are in the wrong folder! Ask your SAP CodeJam instructor how to fix it.
 
 ![Open a workspace](img/setup0047.png)
@@ -69,7 +69,7 @@ You should see:
 
 > SAP provides you with a mechanism to access third-party sites to view and download open-source, 3rd party or its own tools, libraries, or software components ("Extensions") to dev spaces in SAP Business Application Studio. Using this mechanism, you can view and install VS Code Extensions from the [VSX Open Registry](https://open-vsx.org/) at your own risk.
 
-Go to **Extensions** using the activity bar (the left-most bar in the IDE). If you see the disclaimer, but cannot close it, then extend it width until you see the **OK** button. Click **OK** butter after reading the disclaimer.
+Go to **Extensions** using the activity bar (the left-most bar in the IDE). If you see the disclaimer, but cannot close it, then extend it width until you see the **OK** button. Click **OK** button after reading the disclaimer.
 
 ![Disclaimer's OK button](img/setup0052.png)
 
@@ -79,7 +79,7 @@ You should see **Python** and **Jupyter** extensions installed already.
 
 ![Extensions to install](img/setup0051.png)
 
-## [7/10] Create a virtual environment with `venv` from a command line
+## [7/10] Create a virtual environment with `venv` from the command line
 
 The built-in [venv module](https://docs.python.org/3.9/library/venv.html#module-venv) in Python provides support for creating lightweight “virtual environments”. Each virtual environment has its own Python binary (which matches the version of the binary that was used to create this environment) and can have its own independent set of installed Python packages in its site directories.
 
@@ -111,7 +111,7 @@ Activate the virtual environment using the following command:
 source ~/projects/hana-ml-py-codejam/env/bin/activate
 ```
 
-You should see you are in a virtual environment as indicated by the `(env)` prefix in a shell's prompt.
+You should see that you are in a virtual environment as indicated by the `(env)` prefix in a shell's prompt.
 
 ![Activate the venv](img/setup0081.png)
 
@@ -122,7 +122,7 @@ Install:
 1. the `ipykernel` package to be able to run Python code in a Jupyter extension, and Jupyter's own [utilities for programmatic work with notebook documents](https://docs.jupyter.org/en/latest/projects/conversion.html): `nbformat` to be able to run one notebook from another, and `nbconvert` to be able to clean the output of notebooks, eg. before pushing to the Git repository, using the following command:
 
 ```shell
-python -m pip install --require-virtualenv -U 'ipykernel<7' 'ipython<9' 'nbformat' 'nbconvert'
+python -m pip install --require-virtualenv -U "ipykernel<7" "ipython<9" "nbformat" "nbconvert"
 ```
 
 ![Install ipykernel](img/setup0091.png)
@@ -130,12 +130,12 @@ python -m pip install --require-virtualenv -U 'ipykernel<7' 'ipython<9' 'nbforma
 2. the [Python machine learning client for SAP HANA](https://pypi.org/project/hana-ml/) (`hana-ml`) and other required dependencies listed in https://help.sap.com/doc/cd94b08fe2e041c2ba778374572ddba9/2024_1_QRC/en-US/Installation.html#installation-guide using the following command:
 
 ```shell
-python -m pip install --require-virtualenv -U 'hana-ml<2.24' 'ipywidgets' 'graphviz'
+python -m pip install --require-virtualenv -U "hana-ml<2.24" "ipywidgets" "graphviz" "pandas<3"
 ```
 
 ![Install hana-ml and dependencies](img/setup0101.png)
 
-Now, check all required packages are installed:
+Now, check that all required packages are installed:
 
 ```shell
 python -m pip list --not-required
@@ -145,7 +145,7 @@ python -m pip list --not-required
 
 ## [10/10] Open the "Check Setup" notebook from the exercises
 
-In your BAS hide the terminal.
+In your BAS, hide the terminal.
 
 ![Hide the terminal](img/setup0108b.png)
 
@@ -157,8 +157,8 @@ Next, **if** the [kernel](https://code.visualstudio.com/docs/datascience/jupyter
 
 ![Select the kernel](img/setup0112.png)
 
-Should you get messages about Jupyter server processes started in the background, click on the Settings icon and turn off informations and warnings from this extension.
+Should you receive messages about Jupyter server processes started in the background, click on the Settings icon and turn off information and warnings from this extension.
 
 ![Ready to go!](img/setup0121.png)
 
-## 🤓 Now you are ready to use SAP Business Application Studio for the exercises. Wait for the rest of the group to get to that same point. The SAP CodeJam instructor will share the required database user and password details to everyone at the same time!
+## 🤓 Now you are ready to use SAP Business Application Studio for the exercises. Wait for the rest of the group to get to that same point. The SAP CodeJam instructor will share the required database user and password details with everyone at the same time!
